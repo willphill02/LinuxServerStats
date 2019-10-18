@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:key="timeoutSecs"
+            android:title="SSH Timeout Period"
+            android:summary="Set SSH timeout period, use 0 for default"
+            android:dialogTitle="Set timeout period in seconds"
+            android:inputType="number"
+            android:defaultValue="10"/>
+        <ListPreference
+            android:title="Set Default Chart Type"
+            android:summary="%s"
+            android:key="chartType"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+        <PreferenceScreen
+            android:title="View Known Hosts"
+            android:key="prefViewKnownHosts"/>
+        <PreferenceScreen
+            android:title="Clear Known Hosts"
+            android:summary="Delete previously saved host keys/fingerprints"
+            android:key="prefDeleteKnownHosts"/>
+        <PreferenceScreen
+            android:title="Reset App"
+            android:summary="Delete all data stored on the app"
+            android:key="prefReset"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <PreferenceScreen
+            android:title="Rate it"
+            android:summary="Version 1.0"
+            android:key="prefRate"/>
+        <PreferenceScreen
+            android:title="Help"
+            android:key="prefHelp"/>
+        <PreferenceScreen
+            android:title="Licences"
+            android:summary="Open source components used in this app and their licences"
+            android:key="prefLicences"/>
+        <PreferenceScreen
+            android:title="More Information"
+            android:summary="Installing vnStat on your server and other info about the app"
+            android:key="prefMoreInfo"/>
+        <PreferenceScreen
+            android:title="Contact"
+            android:summary="marnistek@gmail.com"
+            android:key="prefContact"/>
+    </PreferenceCategory>
+</PreferenceScreen>

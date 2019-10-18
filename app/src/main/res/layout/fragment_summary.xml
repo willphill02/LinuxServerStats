@@ -1,0 +1,239 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".Fragments.SummaryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dip">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/data_type_array"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tableLayoutSummary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txtSummaryHeader"
+                        android:layout_column="0"
+                        android:text="Summary"
+                        android:padding="2dip"
+                        android:textSize="20sp"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="In"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:text="Out"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:text="Total"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="#FF909090" />
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="This Hour"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtInDataHour"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtOutDataHour"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtTotalDataHour"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="This Day"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtInDataDay"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtOutDataDay"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtTotalDataDay"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="This Month"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtInDataMonth"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtOutDataMonth"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtTotalDataMonth"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="All Time"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtInData"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtOutData"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:id="@+id/txtTotalData"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+                <TableRow>
+                    <TextView
+                        android:text="Top 10 Days"
+                        android:padding="2dip"
+                        android:textSize="20sp"
+                        android:textColor="#000000"/>
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Date"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="In"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:text="Out"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                    <TextView
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:text="Total"
+                        android:gravity="center"
+                        android:padding="2dip" />
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="#FF909090" />
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loadingCircle"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+</FrameLayout>

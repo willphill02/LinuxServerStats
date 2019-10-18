@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_summary"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Summary" />
+        <item
+            android:id="@+id/nav_hours"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Hours" />
+        <item
+            android:id="@+id/nav_days"
+            android:icon="@android:drawable/ic_menu_day"
+            android:title="Days" />
+        <item
+            android:id="@+id/nav_months"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="Months" />
+        <item
+            android:id="@+id/nav_server_info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Server Info" />
+    </group>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Settings" />
+
+
+
+</menu>

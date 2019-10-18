@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragments.ChartFragmentHours"
+    tools:showIn="@layout/fragment_chart">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <TableLayout
+        android:id="@+id/tableLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart"
+        android:padding="0dip"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+        <TableRow>
+            <TextView
+                android:text="Data"
+                android:padding="2dip"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Date"
+                android:padding="2dip" />
+            <TextView
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="In"
+                android:gravity="center"
+                android:padding="2dip" />
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="Out"
+                android:gravity="center"
+                android:padding="2dip" />
+            <TextView
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:text="Total"
+                android:gravity="center"
+                android:padding="2dip" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+    </TableLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

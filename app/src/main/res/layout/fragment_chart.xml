@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".Fragments.ChartFragmentHours">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dip">
+        <LinearLayout
+            android:id="@+id/linearLayoutChartFrag"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/data_type_array2"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <TableLayout
+            android:id="@+id/tableLayoutData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dip"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+            <TableRow>
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:padding="2dip" />
+                <TextView
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="In"
+                    android:gravity="center"
+                    android:padding="2dip" />
+                <TextView
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="Out"
+                    android:gravity="center"
+                    android:padding="2dip" />
+                <TextView
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:gravity="center"
+                    android:padding="2dip" />
+            </TableRow>
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+{
+  "project_info": {
+    "project_number": "776158116211",
+    "firebase_url": "https://admob-app-id-4288849724.firebaseio.com",
+    "project_id": "admob-app-id-4288849724",
+    "storage_bucket": "admob-app-id-4288849724.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776158116211:android:f1006c964b477c1f",
+        "android_client_info": {
+          "package_name": "com.marnistek.aaspeakersfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776158116211-14daiuvu3s3iv1vm5p9nipp3mcose43e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marnistek.aaspeakersfree",
+            "certificate_hash": "2CED16645FEFAC47B886322696B1C2B5394ABDC0"
+          }
+        },
+        {
+          "client_id": "776158116211-lhu8lef99ntb5bfa3k75kt634cklerrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTrf6KOmQvdy_-6SujH-YEkSIR3H6FWzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776158116211:android:81d3fe97720a6189",
+        "android_client_info": {
+          "package_name": "com.marnistek.aaspeakers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776158116211-5it70837orutfcioif4dslh5itkuprlc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marnistek.aaspeakers",
+            "certificate_hash": "552D864D62112F33395C3C2D1AFB4BF09AFF3A6B"
+          }
+        },
+        {
+          "client_id": "776158116211-lhu8lef99ntb5bfa3k75kt634cklerrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTrf6KOmQvdy_-6SujH-YEkSIR3H6FWzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776158116211:android:f904cf2e3b26f71e",
+        "android_client_info": {
+          "package_name": "com.marnistek.serverstats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776158116211-lhu8lef99ntb5bfa3k75kt634cklerrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTrf6KOmQvdy_-6SujH-YEkSIR3H6FWzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

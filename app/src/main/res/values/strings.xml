@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Linux Server Stats</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_server_selector">ServerSelector</string>
+    <string name="large_text">    </string>
+    <string name="nsd_header_text">Add New Server</string>
+    <string name="nsd_name_text">Server Name</string>
+    <string name="nsd_host_text">Host Name (or IP address)</string>
+    <string name="nsd_user_text">Username</string>
+    <string name="nsd_pass_text">Password</string>
+    <string name="nsd_button_text">Add New Server</string>
+    <string name="add_server_btn_lbl">Add New Server</string>
+    <string name="title_activity_add_new_server">Add New Server</string>
+    <string name="title_activity_data">DataActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_displaty_chart1">DisplatyChart1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chart_header_hours">Last 24 Hours</string>
+    <string name="chart_header_days">Last 30 Days</string>
+    <string name="chart_header_months">Last 12 Months</string>
+    <string name="nsd_port_text">Port</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string-array name="os_array">
+        <item>Select Operating System</item>
+        <item>Ubuntu</item>
+        <item>Debian</item>
+        <item>CentOS</item>
+        <item>Fedora</item>
+        <item>Red Hat</item>
+        <item>CloudLinux</item>
+        <item>Arch Linux</item>
+        <item>Gentoo</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="data_type_array">
+        <item>All Time</item>
+        <item>This Month</item>
+        <item>This Day</item>
+        <item>This Hour</item>
+    </string-array>
+
+    <string-array name="data_type_array2">
+        <item>Total Bytes</item>
+        <item>Bytes Out</item>
+        <item>Bytes In</item>
+    </string-array>
+    <string-array name="chart_type_array">
+        <item>Line Chart</item>
+        <item>Bar Chart</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_change_chart_type">Change Chart Type</string>
+    <string name="nsd_os">OS</string>
+    <string name="network_interface_spinner_lbl">Network Interface:</string>
+    <string name="title_activity_edit_server">Edit Server</string>
+    <string name="edit_server_button_text">Save Changes</string>
+
+    <!-- Strings related to Settings -->
+
+    <string-array name="listArray">
+        <item>Line Chart</item>
+        <item>Bar Chart</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="action_known_hosts">Known Hosts</string>
+    <string name="title_activity_known_hosts">KnownHosts</string>
+    <string name="title_activity_known_hosts_data">KnownHostsData</string>
+
+    <string name="title_activity_licences">Licences</string>
+    <string name="title_activity_lincence_info">LincenceInfo</string>
+    <string name="server_info_text">Coming Soon!</string>
+    <string name="server_info_header">Server Info</string>
+
+    <string name="help_dialog_message">To use this app simply click the add new server button in the bottom right of the screen to add a new server.\n\nNext fill in the details of your server. Please note that this app does require the open source program vnStat to be installed on your server, for the app to install this for you please log in as the root user, if you do not wish for the app to install vnStat for you, you can do it manually by following the instructions at:\n\nhttp://marnistek.site88.net/install_vnstat.html.\n\nOnce you have added a server simply select the server and the data pages will load, this may take some time depending on your network connection.\n\nTo view or edit SSH known hosts select \"Known Hosts\" from the options menu.\n\nTo delete or edit a server simply hold down on the server you wish to edit or delete and choose from the pop up menu.\n\nAny problems please email me at marnistek@gmail.com before leaving negative feedback.\n\nThanks</string>
+
+    <string name="install_vnstat_warning1">This app requires the program vnStat to be installed on your server, would you like to install this now?\n\nWARNING\n\nroot access to server required</string>
+    <string name="install_vnstat_warning1_other_os">This app requires the program vnStat to be installed on your server, auto install of vnStat is not currently available for your server\'s OS, please manually install vnStat on your server.</string>
+    <string name="install_vnstat_warning2">For this app to work you need to install vnStat on your server, please either allow the app to install it (root access to server required) or visit:\n\n http://marnistek.site88.net/install_vnstat.html \n\nfor instructions on how to manually install vnStat on your Server.</string>
+
+    <string name="install_vnstat_warning1_root">This app requires the program vnStat to be installed on your server, would you like to install this now?</string>
+    <string name="install_vnstat_warning2_root">For this app to work you need to install vnStat on your server, please either allow the app to install it or visit:\n\n http://marnistek.site88.net/install_vnstat.html \n\nfor instructions on how to manually install vnStat on your Server.</string>
+
+    <string name="rta_dialog_title">Rate this app</string>
+    <string name="rta_dialog_message">If you enjoy this app, please take a moment to rate this app. It won\'t take more than a minute. Thank you for your support!</string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_cancel">Remind later</string>
+    <string name="rta_dialog_no">No, thanks</string>
+    <string name="ad_unit_id">ca-app-pub-4291542188052451/4030000129</string>
+    <string name="get_pro_add_server_msg">Maximum of 2 servers when using free version, please upgrade to the Pro version for unlimited servers.\n\nPRO VERSION COMING SOON!</string>
+    <string name="welcome_msg">Welcome to Linux Server Stats.\n\nThis app allows you to track and monitor the bandwidth / network traffic of your Linux server.\n\nThis app uses SSH to connect to your server and currently will only work with password authentication, so please set PasswordAuthentication to \"yes\" in sshd_config on your server. Connection via SSH keys will be coming with future updates.\n\nThis app also requires the open source program vnStat to be installed on you\'re server to monitor network traffic, the app can install this for you if you wish, provided you are running an OS (or variant of) listed in the drop down list on the add server page.\n\nThank you.</string>
+    <string name="os_spinner_prompt">Select Operating System</string>
+
+</resources>
